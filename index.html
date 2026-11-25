@@ -856,7 +856,7 @@ ${item('uat-pm-comms','The PM handles customer communication',note('info','info'
 ${item('uat-never','Never on a UAT case',`<div class="card"><span class="pill c-coral">Never</span><ul class="clean" style="margin-top:10px"><li>Troubleshoot the issue.</li><li>Assign it to the Delivery Team.</li><li>Bill time on a UAT case. UAT cases are never billable.</li><li>Discuss fixes or dates with the customer.</li></ul></div>`)}
 ${item('uat-why','Why it matters',`<div class="card"><span class="pill c-sun">Why</span><ul class="clean" style="margin-top:10px"><li><b style="color:var(--ink)">Wrong billing:</b> UAT work is part of the project.</li><li><b style="color:var(--ink)">Confusion:</b> two teams on the same issue, or mixed answers for the customer.</li><li><b style="color:var(--ink)">A delayed Go-Live.</b></li></ul></div>`)}
 </div>${item('uat-doubt','In doubt on a UAT case',note('','bulb','<b>In doubt?</b> Can&rsquo;t find the MPD email, or the UAT dates have passed? Reach out to the project&rsquo;s PM directly.'))}
-<p class="intro">Watch the video: <a href="https://motionpoint-support.github.io/UAT-cases-guidelines/" target="_blank" rel="noopener">UAT Cases: Route, Don&rsquo;t Fix</a>.</p></section>`;
+<p class="intro">Watch the video: <a href="https://motionpoint-support.github.io/UAT-cases/" target="_blank" rel="noopener">UAT Cases: Route, Don&rsquo;t Fix</a>.</p></section>`;
 
 R.contacts = () => `
 <section class="sec"><h2>Who owns what</h2><div class="grid2">${owners.map(o=>item('owner-'+o[0].toLowerCase().replace(/ /g,'-'),o[0]+': '+o[1],`<div class="card"><h3>${o[0]} <span class="muted" style="font-family:var(--f-body);font-weight:400">· ${o[1]}</span></h3><p>${esc(o[2])}</p></div>`)).join('')}</div></section>
